@@ -4,7 +4,8 @@ const Empresas = [
     'Google',
     'OpenAI',
     'Furukawa',
-    'Cisco'
+    'Cisco',
+    'LL'
 ]
 
 module.exports = Empresas

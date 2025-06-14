@@ -1,6 +1,7 @@
-// ROTAS
+// ROTAS ** PRECISAM IMPORTAR
 const express = require('express');
 const Empresas = require('../models/Empresas');
+const Servicos = require('../models/Servicos');
 const router = express.Router();
 
 router.get('/', (req, res)=>{
@@ -17,7 +18,13 @@ router.get('/ping', (req, res)=>{
 
 router.get('/empresas', (req, res) =>{
     res.json({
-        "Empresas": Empresas
+        "empresas": Empresas
+    })
+})
+
+router.get('/servicos', (req, res) =>{
+    res.json({
+        "Servicos": Servicos
     })
 })
 
